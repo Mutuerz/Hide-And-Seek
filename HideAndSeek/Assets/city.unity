@@ -119,9 +119,9 @@ GameObject:
   - component: {fileID: 10119718}
   - component: {fileID: 10119717}
   - component: {fileID: 10119716}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule (15)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -220,6 +220,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 710050191}
+  - {fileID: 1486784124}
   m_Father: {fileID: 715244303}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -296,9 +297,9 @@ GameObject:
   - component: {fileID: 99794215}
   - component: {fileID: 99794214}
   - component: {fileID: 99794213}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule (6)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -379,9 +380,9 @@ GameObject:
   - component: {fileID: 141218844}
   - component: {fileID: 141218843}
   - component: {fileID: 141218842}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -585,6 +586,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Camera: {fileID: 164524371}
+  CatchImage: {fileID: 1486784125}
+  MaxCatchRatio: 100
+  CatchRatio: 0
 --- !u!1 &435934446
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,9 +600,9 @@ GameObject:
   - component: {fileID: 435934450}
   - component: {fileID: 435934449}
   - component: {fileID: 435934448}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule (10)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -679,9 +683,9 @@ GameObject:
   - component: {fileID: 437245513}
   - component: {fileID: 437245512}
   - component: {fileID: 437245511}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule (14)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -762,7 +766,7 @@ GameObject:
   - component: {fileID: 710050193}
   - component: {fileID: 710050192}
   m_Layer: 0
-  m_Name: Image
+  m_Name: Mira
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -859,9 +863,9 @@ GameObject:
   - component: {fileID: 728055213}
   - component: {fileID: 728055212}
   - component: {fileID: 728055211}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule (8)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -942,9 +946,9 @@ GameObject:
   - component: {fileID: 775568498}
   - component: {fileID: 775568497}
   - component: {fileID: 775568496}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule (12)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1092,7 +1096,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 469886, guid: ee2d107a34692a64e95ce85aed5e41f0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 12.9
+      value: 3.4
       objectReference: {fileID: 0}
     - target: {fileID: 469886, guid: ee2d107a34692a64e95ce85aed5e41f0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1142,6 +1146,14 @@ Prefab:
       propertyPath: freeSprintSpeed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 11452448, guid: ee2d107a34692a64e95ce85aed5e41f0, type: 2}
+      propertyPath: jumpForward
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11452448, guid: ee2d107a34692a64e95ce85aed5e41f0, type: 2}
+      propertyPath: jumpHeight
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee2d107a34692a64e95ce85aed5e41f0, type: 2}
   m_IsPrefabParent: 0
@@ -1156,9 +1168,9 @@ GameObject:
   - component: {fileID: 1122590008}
   - component: {fileID: 1122590007}
   - component: {fileID: 1122590006}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule (7)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1239,9 +1251,9 @@ GameObject:
   - component: {fileID: 1189794932}
   - component: {fileID: 1189794931}
   - component: {fileID: 1189794930}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1393,9 +1405,9 @@ GameObject:
   - component: {fileID: 1290327096}
   - component: {fileID: 1290327095}
   - component: {fileID: 1290327094}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule (5)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1476,9 +1488,9 @@ GameObject:
   - component: {fileID: 1315053689}
   - component: {fileID: 1315053688}
   - component: {fileID: 1315053687}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule (4)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1559,9 +1571,9 @@ GameObject:
   - component: {fileID: 1413722631}
   - component: {fileID: 1413722630}
   - component: {fileID: 1413722629}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule (9)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1642,9 +1654,9 @@ GameObject:
   - component: {fileID: 1457615407}
   - component: {fileID: 1457615406}
   - component: {fileID: 1457615405}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1714,6 +1726,74 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1457615403}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1486784123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1486784124}
+  - component: {fileID: 1486784126}
+  - component: {fileID: 1486784125}
+  m_Layer: 0
+  m_Name: CatchRatio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1486784124
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1486784123}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
+  m_Children: []
+  m_Father: {fileID: 30827310}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.3, y: 50.6}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1486784125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1486784123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6064013, g: 1, b: 0.04411763, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 9c27337f2baf4be4e9964e65d451a6db, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1486784126
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1486784123}
 --- !u!1 &1554142647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,9 +1805,9 @@ GameObject:
   - component: {fileID: 1554142651}
   - component: {fileID: 1554142650}
   - component: {fileID: 1554142649}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1852,9 +1932,9 @@ GameObject:
   - component: {fileID: 1970737238}
   - component: {fileID: 1970737237}
   - component: {fileID: 1970737236}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule (13)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1935,9 +2015,9 @@ GameObject:
   - component: {fileID: 2099415285}
   - component: {fileID: 2099415284}
   - component: {fileID: 2099415283}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule (11)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
