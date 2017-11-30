@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.Networking;
 using UnityEngine;
 
 public class Catch : MonoBehaviour {
@@ -17,6 +18,7 @@ public class Catch : MonoBehaviour {
     }
 
     void Update() {
+       
         RaycastHit hit;
 
         // Correcciones de direccion de spherecast debido a la posicion de la mira y camara
